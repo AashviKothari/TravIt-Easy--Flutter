@@ -1,4 +1,4 @@
-# travel_cubic
+# travIt-Easy 
 
 A new Flutter project.
 
