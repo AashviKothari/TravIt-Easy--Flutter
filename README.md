@@ -1,4 +1,4 @@
-# travIt-Easy 
+# TravIt-Easy 
 
 TravIt-Easy 🛫 is a flutter Based AOS Application📲 Designed to help user Travel !! It consists of Multiple components like Scrollbars 
 👩‍💻and Sliders that allow Navigations from one page📟 to another using Ticker-Provider and Many Other Features🪶
