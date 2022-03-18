@@ -123,10 +123,26 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                  Container(
                    margin: const EdgeInsets.only(left: 20),
                    child: ListView.builder(
+                     itemCount: 4,
                      itemBuilder: (_,index){
                        return Column(
                          children: [
-                           
+                           Container(
+                        margin: const EdgeInsets.only(right: 15,top: 15),
+                        width: 80,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                            color: Colors.white,
+                            image: DecorationImage(
+                              image: AssetImage(
+                                "img/mountain.jpeg"
+                              ),
+                              fit: BoxFit.cover
+                            )
+                          )
+                        )
+                        
                        ],
                        );
                      }),
