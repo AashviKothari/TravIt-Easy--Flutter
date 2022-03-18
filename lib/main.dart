@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:travel_cubic/pages/navpages/home_page.dart';
+import 'package:travel_cubic/pages/navpages/main_page.dart';
 import 'package:travel_cubic/pages/welcome_page.dart';
 
 void main() {
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: WelcomePage()
+      home: MainPage()
     );
   }
 }
