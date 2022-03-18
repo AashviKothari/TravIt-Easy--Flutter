@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
             ),
           ),
         
-        SizedBox(height: 20),
+        SizedBox(height: 10),
                 Container(
                   margin: const EdgeInsets.only(left: 20),
                   child: AppLargeText(text: "Discover!"),
@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                           Container(
                         margin: const EdgeInsets.only(right: 15,top: 15),
                         width: 200,
-                        height: 300,
+                        height: 250,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                             color: Colors.white,
@@ -108,7 +108,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                     Text("Bye!")
                   ]),
                 ),
-                SizedBox(height: 30,),
+                SizedBox(height: 20,),
                 Container(
                   margin: const EdgeInsets.only(left:20, right:20),
                   child: Row(
@@ -119,18 +119,23 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                   ],
                 )
                 ),
-                 SizedBox(height: 20,),
+                 SizedBox(height: 15,),
                  Container(
+                   height: 100,
+                   width: double.maxFinite,
                    margin: const EdgeInsets.only(left: 20),
                    child: ListView.builder(
                      itemCount: 4,
+                     scrollDirection: Axis.horizontal,
                      itemBuilder: (_,index){
-                       return Column(
+                       return Container(
+                         margin: const EdgeInsets.only(right: 20),
+                       child: Column(
                          children: [
                            Container(
-                        margin: const EdgeInsets.only(right: 15,top: 15),
-                        width: 80,
-                        height: 80,
+                        
+                        width: 65,
+                        height: 65,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                             color: Colors.white,
@@ -141,9 +146,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                               fit: BoxFit.cover
                             )
                           )
-                        )
-                        
+                        ),
+                            Container(
+                              child: AppText(text: "Kayaking", color: AppColors.textColor2,),
+                            )
                        ],
+                       ),
                        );
                      }),
                  ) 
