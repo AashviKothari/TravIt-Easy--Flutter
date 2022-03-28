@@ -128,6 +128,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                      itemCount: 4,
                      scrollDirection: Axis.horizontal,
                        
+                       
                      itemBuilder: (_,index){
                        return Container(
                          margin: const EdgeInsets.only(right: 20),
